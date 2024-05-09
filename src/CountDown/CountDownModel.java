@@ -42,4 +42,8 @@ public class CountDownModel {
             worker.cancel(true);
         }
     }
+
+    public void decrementCount() {
+        count--;
+    }
 }

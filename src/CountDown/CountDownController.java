@@ -18,3 +18,5 @@ public class CountDownController {
     private void handleCountDown() {
         model.decrementCount();  // Decrementa el contador en el modelo.
         view.setCountDisplay(model.getCount());  // Actualiza
+    }
+}
