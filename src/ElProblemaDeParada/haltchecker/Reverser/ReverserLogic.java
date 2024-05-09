@@ -1,4 +1,4 @@
-package Reverser;
+package ElProblemaDeParada.haltchecker.Reverser;
 /**
  * Clase que contiene la lógica de la aplicación.
  * @autor Pedro Alonso Tapia Lobo
@@ -6,7 +6,7 @@ package Reverser;
 
 public class ReverserLogic {
     public static boolean willHalt() {
-        // Simulación: Supongamos que 'Reverser' siempre se detiene
+        // Simulación: Supongamos que 'ElProblemaDeParada.haltchecker.Reverser' siempre se detiene
         return true;  // Puedes cambiar esta lógica según tus requisitos
     }
 }

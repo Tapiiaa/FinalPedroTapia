@@ -1,4 +1,4 @@
-package Programas;
+package ElProblemaDeParada.haltchecker.Programas;
 /**
  * Main class to run the application.
  * @autor Pedro Alonso Tapia Lobo

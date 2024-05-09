@@ -1,4 +1,4 @@
-//package Reverser;
+//package ElProblemaDeParada.haltchecker.Reverser;
 //
 //
 //import javax.swing.*;
@@ -11,7 +11,7 @@
 //    private JTextArea resultArea;
 //
 //    public ReverserView() {
-//        setTitle("Reverser Simulation");
+//        setTitle("ElProblemaDeParada.haltchecker.Reverser Simulation");
 //        setSize(400, 300);
 //        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //        setLayout(new BorderLayout());
@@ -43,9 +43,9 @@
 //        resultArea.setText(result);
 //    }
 //}
-package Reverser;
+package ElProblemaDeParada.haltchecker.Reverser;
 /**
- * Vista para la simulación de Reverser.
+ * Vista para la simulación de ElProblemaDeParada.haltchecker.Reverser.
  * @autor Pedro Alonso Tapia Lobo
  */
 import javax.swing.*;
@@ -59,7 +59,7 @@ public class ReverserView extends JFrame {
     private JTextArea resultArea;
 
     public ReverserView() {
-        setTitle("Reverser Simulation");
+        setTitle("ElProblemaDeParada.haltchecker.Reverser Simulation");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());

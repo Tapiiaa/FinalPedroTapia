@@ -1,4 +1,4 @@
-package Programas;
+package ElProblemaDeParada.haltchecker.Programas;
 /**
  * Clase que cuenta indefinidamente hasta abajo
  * @author Pedro Alonso Tapia Lobo

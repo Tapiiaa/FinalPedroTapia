@@ -1,9 +1,14 @@
-package haltchecker;
+package ElProblemaDeParada.haltchecker.haltchecker;
+
 /**
- * Handler to check if the code contains an infinite loop.
+ * Handler to check if the code will halt.
  * @author Pedro Alonso Tapia Lobo
+
  */
-public class CountUpHandler implements Handler {
+
+
+
+public class CountDownHandler implements Handler {
     private Handler nextHandler;
 
     /**
@@ -16,17 +21,18 @@ public class CountUpHandler implements Handler {
     }
 
     /**
-     * Checks if the code contains an infinite loop.
+     * Checks if the code will halt.
      * @param code The code to check.
-     * @return True if the code contains an infinite loop, false otherwise.
+     * @return True if the code will halt, false otherwise.
      */
     @Override
     public boolean handleRequest(String code) {
-        if (code.contains("count++;") && code.contains("while (true)")) {
-            return false; // El código nunca se detiene
+        if (code.contains("count--;") && code.contains("for")) {
+            return true; // El código se detiene eventualmente
         } else if (nextHandler != null) {
             return nextHandler.handleRequest(code);
         }
-        return false; // Si no se reconoce el patrón, asumimos que no se detiene
+        return true; // Si no se reconoce el patrón, asumimos que se detiene
     }
 }
+

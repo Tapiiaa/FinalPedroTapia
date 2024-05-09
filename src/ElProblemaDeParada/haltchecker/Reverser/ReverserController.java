@@ -1,6 +1,6 @@
-//package Reverser;
+//package ElProblemaDeParada.haltchecker.Reverser;
 //
-//import haltchecker.HaltChecker;
+//import ElProblemaDeParada.haltchecker.haltchecker.HaltChecker;
 //
 //import javax.swing.*;
 //
@@ -65,12 +65,12 @@
 //    }
 //}
 
-package Reverser;
+package ElProblemaDeParada.haltchecker.Reverser;
 /**
- * Controlador para la vista de Reverser.
+ * Controlador para la vista de ElProblemaDeParada.haltchecker.Reverser.
  * @autor Pedro Alonso Tapia Lobo
  */
-import haltchecker.HaltChecker;
+import ElProblemaDeParada.haltchecker.haltchecker.HaltChecker;
 
 import javax.swing.*;
 
@@ -117,12 +117,12 @@ public class ReverserController {
 
     private void handleReverser() {
         boolean willHalt = ReverserLogic.willHalt();
-        // Reverser: Comportamiento basado en la lógica simulada de si se detendrá o no.
+        // ElProblemaDeParada.haltchecker.Reverser: Comportamiento basado en la lógica simulada de si se detendrá o no.
         if (willHalt) {
-            view.displayResult("Reverser simulation will halt. Now entering an infinite loop...");
+            view.displayResult("ElProblemaDeParada.haltchecker.Reverser simulation will halt. Now entering an infinite loop...");
             runInfiniteLoop();
         } else {
-            view.displayResult("Reverser simulation detected to never halt. Terminating...");
+            view.displayResult("ElProblemaDeParada.haltchecker.Reverser simulation detected to never halt. Terminating...");
             System.exit(0);
         }
     }

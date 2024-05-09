@@ -1,4 +1,4 @@
-package Programas;
+package ElProblemaDeParada.haltchecker.Programas;
 /**
  * Clase menú que muestra las opciones de programas a ejecutar
  * @autor Pedro Alonso Tapia Lobo

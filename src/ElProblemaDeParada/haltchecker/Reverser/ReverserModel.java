@@ -1,4 +1,4 @@
-package Reverser;
+package ElProblemaDeParada.haltchecker.Reverser;
 /**
  * Clase que contiene el modelo de la aplicación.
  * @autor Pedro Alonso Tapia Lobo
@@ -17,7 +17,7 @@ public class ReverserModel {
     }
 
     public String simulateReverser() {
-        // Placeholder for Reverser simulation logic
-        return "Analyzing Reverser behavior...";
+        // Placeholder for ElProblemaDeParada.haltchecker.Reverser simulation logic
+        return "Analyzing ElProblemaDeParada.haltchecker.Reverser behavior...";
     }
 }

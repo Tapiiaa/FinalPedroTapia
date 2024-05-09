@@ -1,4 +1,4 @@
-package haltchecker;
+package ElProblemaDeParada.haltchecker.haltchecker;
 /**
  * Interfaz que define un manejador de solicitudes.
  * @autor Pedro Alonso Tapia Lobo

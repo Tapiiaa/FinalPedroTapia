@@ -1,4 +1,4 @@
-package Reverser;
+package ElProblemaDeParada.haltchecker.Reverser;
 import javax.swing.SwingUtilities;
 
 /**

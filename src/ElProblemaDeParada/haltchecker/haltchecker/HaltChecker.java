@@ -1,4 +1,4 @@
-package haltchecker;
+package ElProblemaDeParada.haltchecker.haltchecker;
 /**
  * Clase que verifica si un programa se detiene o no.
  * @autor Pedro Alonso Tapia Lobo
