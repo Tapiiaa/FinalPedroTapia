@@ -1,5 +1,4 @@
 package Reverser;
-
 public class ReverserLogic {
     public static boolean willHalt() {
         // Simulación: Supongamos que 'Reverser' siempre se detiene
