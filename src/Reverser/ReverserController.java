@@ -66,7 +66,10 @@
 //}
 
 package Reverser;
-
+/**
+ * Controlador para la vista de Reverser.
+ * @autor Pedro Alonso Tapia Lobo
+ */
 import haltchecker.HaltChecker;
 
 import javax.swing.*;

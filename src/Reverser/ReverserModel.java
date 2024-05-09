@@ -1,5 +1,8 @@
 package Reverser;
-
+/**
+ * Clase que contiene el modelo de la aplicación.
+ * @autor Pedro Alonso Tapia Lobo
+ */
 
 public class ReverserModel {
 

@@ -44,7 +44,10 @@
 //    }
 //}
 package Reverser;
-
+/**
+ * Vista para la simulación de Reverser.
+ * @autor Pedro Alonso Tapia Lobo
+ */
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
