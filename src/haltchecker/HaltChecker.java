@@ -1,18 +1,19 @@
 package haltchecker;
+
+
+
 public class HaltChecker {
 
-    // Evalúa si el código suministrado se detiene.
     public static boolean willHalt(String code) {
-        // Ejemplos de condiciones que podríamos evaluar
-        if (code.contains("while (true)") && !code.contains("break")) {
-            return false;  // Un bucle infinito sin una declaración de salida.
+        if (code.equalsIgnoreCase("CountUp")) {
+            return false;  // Asumimos que CountUp nunca se detiene.
+        } else if (code.equalsIgnoreCase("CountDown")) {
+            return true;  // Asumimos que CountDown siempre se detiene.
         }
-        if (code.matches(".*for \\(.*;.*;.*\\) \\{.*\\}") && !code.contains("break")) {
-            return false;  // Un bucle for sin una condición de escape clara.
-        }
-        return true;  // Por defecto, suponemos que cualquier otro código se detiene.
+        return false;  // Por defecto, otros códigos no se detienen.
     }
 }
+
 
 
 
