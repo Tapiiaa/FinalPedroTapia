@@ -6,51 +6,36 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 public class ReverserView extends JFrame {
-    private JButton countUpButton;
-    private JButton countDownButton;
-    private JButton reverserButton;
-    private JTextArea resultArea;
+    private JTextArea codeArea;
+    private JButton analyzeButton;
+    private JLabel resultLabel;
 
     public ReverserView() {
-        setTitle("Reverser Simulator");
+        super("Reverser Simulation");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
-        initializeComponents();
+
+        codeArea = new JTextArea(10, 30);
+        JScrollPane scrollPane = new JScrollPane(codeArea);
+
+        analyzeButton = new JButton("Analyze");
+        resultLabel = new JLabel(" Enter code and press Analyze.");
+
+        add(scrollPane, BorderLayout.CENTER);
+        add(analyzeButton, BorderLayout.SOUTH);
+        add(resultLabel, BorderLayout.NORTH);
     }
 
-    private void initializeComponents() {
-        // Panel for buttons
-        JPanel buttonPanel = new JPanel(new GridLayout(1, 3));
-        countUpButton = new JButton("CountUp");
-        countDownButton = new JButton("CountDown");
-        reverserButton = new JButton("Reverser");
-
-        buttonPanel.add(countUpButton);
-        buttonPanel.add(countDownButton);
-        buttonPanel.add(reverserButton);
-
-        add(buttonPanel, BorderLayout.NORTH);
-
-        // Text area for results
-        resultArea = new JTextArea("Results will appear here...");
-        resultArea.setEditable(false);
-        add(new JScrollPane(resultArea), BorderLayout.CENTER);
+    public void setAnalyzeButtonAction(ActionListener actionListener) {
+        analyzeButton.addActionListener(actionListener);
     }
 
-    public void addCountUpButtonListener(ActionListener listener) {
-        countUpButton.addActionListener(listener);
+    public String getCode() {
+        return codeArea.getText();
     }
 
-    public void addCountDownButtonListener(ActionListener listener) {
-        countDownButton.addActionListener(listener);
-    }
-
-    public void addReverserButtonListener(ActionListener listener) {
-        reverserButton.addActionListener(listener);
-    }
-
-    public void displayResult(String result) {
-        resultArea.setText(result);
+    public void setResultText(String text) {
+        resultLabel.setText(text);
     }
 }
