@@ -6,7 +6,7 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 public class CountDownView extends JFrame {
-    private JButton countButton;
+    private JButton startButton;
     private JLabel countLabel;
 
     public CountDownView() {
@@ -18,17 +18,18 @@ public class CountDownView extends JFrame {
     }
 
     private void initializeComponents() {
-        countButton = new JButton("Count Down");
-        countLabel = new JLabel("10");
-        add(countButton);
+        startButton = new JButton("Start Counting Down");
+        countLabel = new JLabel("Waiting to start...");
+        add(startButton);
         add(countLabel);
     }
 
     public void setCountDisplay(int count) {
-        countLabel.setText(String.valueOf(count));
+        countLabel.setText("Count: " + count);
     }
 
-    public void addCountButtonListener(ActionListener listener) {
-        countButton.addActionListener(listener);
+    public void addStartButtonListener(ActionListener listener) {
+        startButton.addActionListener(listener);
     }
 }
+

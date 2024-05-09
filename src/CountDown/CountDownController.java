@@ -1,5 +1,7 @@
 package CountDown;
 
+
+
 public class CountDownController {
     private CountDownModel model;
     private CountDownView view;
@@ -12,11 +14,9 @@ public class CountDownController {
 
     private void initView() {
         view.setVisible(true);
-        view.addCountButtonListener(e -> handleCountDown());
-    }
-
-    private void handleCountDown() {
-        model.decrementCount();  // Decrementa el contador en el modelo.
-        view.setCountDisplay(model.getCount());  // Actualiza
+        view.addStartButtonListener(e -> model.startCounting());
+        model.addPropertyChangeListener("count", evt -> {
+            view.setCountDisplay((Integer) evt.getNewValue());
+        });
     }
 }

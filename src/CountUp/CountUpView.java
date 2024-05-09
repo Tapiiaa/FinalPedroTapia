@@ -1,11 +1,12 @@
 package CountUp;
+
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
 public class CountUpView extends JFrame {
-    private JButton countButton;
-    private JButton stopButton;
+    private JButton startButton;
     private JLabel countLabel;
 
     public CountUpView() {
@@ -17,11 +18,9 @@ public class CountUpView extends JFrame {
     }
 
     private void initializeComponents() {
-        countButton = new JButton("Start Counting");
-        stopButton = new JButton("Stop Counting");
-        countLabel = new JLabel("0");
-        add(countButton);
-        add(stopButton);
+        startButton = new JButton("Start Counting");
+        countLabel = new JLabel("Count: 0");
+        add(startButton);
         add(countLabel);
     }
 
@@ -30,12 +29,6 @@ public class CountUpView extends JFrame {
     }
 
     public void addStartCountingListener(ActionListener listener) {
-        countButton.addActionListener(listener);
-    }
-
-    public void addStopCountingListener(ActionListener listener) {
-        stopButton.addActionListener(listener);
+        startButton.addActionListener(listener);
     }
 }
-
-

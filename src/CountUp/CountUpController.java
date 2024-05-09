@@ -1,5 +1,8 @@
 package CountUp;
 
+
+import javax.swing.*;
+
 public class CountUpController {
     private CountUpModel model;
     private CountUpView view;
@@ -12,8 +15,16 @@ public class CountUpController {
 
     private void initView() {
         view.setVisible(true);
-        view.addStartCountingListener(e -> model.startCounting());
-        view.addStopCountingListener(e -> model.stopCounting());
+        view.addStartCountingListener(e -> startCounting());
+        model.addPropertyChangeListener("count", evt -> {
+            SwingUtilities.invokeLater(() -> {
+                view.setCountDisplay((Integer) evt.getNewValue());
+            });
+        });
+    }
+
+    private void startCounting() {
+        model.startCounting();  // Inicia el proceso de conteo en el modelo.
     }
 }
 
