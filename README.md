@@ -64,4 +64,12 @@ Luego diseñamos los handlers para cada tipo, y finalmente, implementamos la cad
 Este ejercicio demuestra los límites de la computación tal como lo descubrió Turing, ya que ningún algoritmo puede determinar infaliblemente si un programa arbitrario se detendrá o no. 
 Nos enseña la importancia de los patrones de diseño para abordar problemas complejos y cómo crear simulaciones con técnicas modernas.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Analizador de código
+He creado un analizador sintáctico, léxico y semántico que analiza unicamente bucles for y while. En caso de que esté bien escrito, nos dice que no hay errores
+
+Se adjunta un UML, Test unitarios acerca del main
+
+
 
