@@ -34,5 +34,10 @@ public class CountDownHandler implements Handler {
         }
         return true; // Si no se reconoce el patrón, asumimos que se detiene
     }
+
+    @Override
+    public boolean handle(String code) {
+        return true;
+    }
 }
 

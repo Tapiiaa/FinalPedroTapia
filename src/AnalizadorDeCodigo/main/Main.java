@@ -3,9 +3,9 @@ package AnalizadorDeCodigo.main;
 
 
 
-import gui.CodeAnalyzerGUI;
-import handlers.*;
-
+import AnalizadorDeCodigo.gui.CodeAnalyzerGUI;
+import AnalizadorDeCodigo.handlers.*;
+import javax.swing.*;
 import javax.swing.SwingUtilities;
 import javax.swing.JTextArea;
 
@@ -14,15 +14,9 @@ public class Main {
         SwingUtilities.invokeLater(() -> {
             JTextArea resultArea = new JTextArea();
             LexicalHandler lexicalHandler = new LexicalHandler(resultArea);
-            SyntaxHandler syntaxHandler = new SyntaxHandler(resultArea);
-            SemanticHandler semanticHandler = new SemanticHandler(resultArea);
-            LoopAnalysisHandler loopAnalysisHandler = new LoopAnalysisHandler(resultArea);
 
-            lexicalHandler.setNext(syntaxHandler);
-            syntaxHandler.setNext(semanticHandler);
-            semanticHandler.setNext(loopAnalysisHandler);
-
-            new CodeAnalyzerGUI(lexicalHandler).setVisible(true);
+            CodeAnalyzerGUI gui = new CodeAnalyzerGUI(lexicalHandler);
+            gui.setVisible(true);
         });
     }
 }

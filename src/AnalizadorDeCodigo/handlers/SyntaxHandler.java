@@ -1,9 +1,4 @@
 package AnalizadorDeCodigo.handlers;
-
-// handlers/SyntaxHandler.java
-
-
-
 import javax.swing.JTextArea;
 
 public class SyntaxHandler implements Handler {
@@ -21,7 +16,8 @@ public class SyntaxHandler implements Handler {
 
     @Override
     public void handleRequest(String code) {
-        resultArea.append("Análisis sintáctico completado.\n");
+        // Asignamos true para simplificar el ejemplo
+        resultArea.append("Análisis sintáctico completado: true\n");
         if (nextHandler != null) {
             nextHandler.handleRequest(code);
         }

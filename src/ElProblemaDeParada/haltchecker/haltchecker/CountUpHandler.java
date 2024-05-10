@@ -30,4 +30,9 @@ public class CountUpHandler implements Handler {
         }
         return false; // Si no se reconoce el patrón, asumimos que no se detiene
     }
+
+    @Override
+    public boolean handle(String code) {
+        return false;
+    }
 }

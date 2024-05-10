@@ -98,5 +98,9 @@ public class ReverserView extends JFrame {
     public void displayResult(String result) {
         resultArea.setText(result);
     }
+
+    public String getCodeInput() {
+        return JOptionPane.showInputDialog("Introduce el código a analizar:");
+    }
 }
 

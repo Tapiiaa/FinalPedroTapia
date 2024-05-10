@@ -1,4 +1,7 @@
-package ElProblemaDeParada.haltchecker.Reverser;
+package ElProblemaDeParada.haltchecker.Main;
+import ElProblemaDeParada.haltchecker.Reverser.ReverserController;
+import ElProblemaDeParada.haltchecker.Reverser.ReverserView;
+
 import javax.swing.SwingUtilities;
 
 /**

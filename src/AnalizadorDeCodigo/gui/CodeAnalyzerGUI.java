@@ -1,9 +1,11 @@
 package AnalizadorDeCodigo.gui;
 // gui/CodeAnalyzerGUI.java
 
+import AnalizadorDeCodigo.handlers.Handler;
+// gui/CodeAnalyzerGUI.java
 
 
-import handlers.Handler;
+
 import javax.swing.*;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -45,8 +47,7 @@ public class CodeAnalyzerGUI extends JFrame {
     }
 
     private void analyzeCode(String code) {
-        resultArea.setText("Analizando...\n");
+        resultArea.setText("Iniciando análisis...\n");
         lexicalHandler.handleRequest(code);
-        resultArea.append("Análisis completado. Resultados:\n");
     }
 }
