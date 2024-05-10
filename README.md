@@ -1,6 +1,8 @@
 Examen 4. Técnicas de Programación
 Realizado por: Pedro Alonso Tapia Lobo
 
+Link a mi repositorio: https://github.com/Tapiiaa/FinalPedroTapia.git
+
 El problema de parada- Alan Turing.
 # Proyecto de Simulación del Problema de Parada de Alan Turing
 
