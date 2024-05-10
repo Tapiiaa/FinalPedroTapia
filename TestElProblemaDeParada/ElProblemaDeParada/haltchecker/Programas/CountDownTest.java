@@ -1,4 +1,8 @@
 package ElProblemaDeParada.haltchecker.Programas;
+/**
+ * Clase que cuenta indefinidamente hasta abajo
+ * @autor Pedro Alonso Tapia Lobo
+ */
 
 import static org.junit.jupiter.api.Assertions.*;
 

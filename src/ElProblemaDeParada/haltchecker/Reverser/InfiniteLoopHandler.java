@@ -1,5 +1,9 @@
 package ElProblemaDeParada.haltchecker.Reverser;
 
+/**
+ * Clase que maneja un bucle for potencialmente infinito.
+ * @autor Pedro Alonso Tapia Lobo
+ */
 import ElProblemaDeParada.haltchecker.haltchecker.Handler;
 
 public abstract class InfiniteLoopHandler implements Handler {
