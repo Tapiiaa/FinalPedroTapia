@@ -1,6 +1,6 @@
 package AnalizadorDeCódigo.Analyzer;
 
-import AnalizadorDeCódigo.Handler;
+import AnalizadorDeCódigo.Handler.Handler;
 import AnalizadorDeCódigo.Analizadores.PalabraReservadaHandler;
 import AnalizadorDeCódigo.Analizadores.SintaxisHandler;
 import AnalizadorDeCódigo.Analizadores.ParentesisHandler;

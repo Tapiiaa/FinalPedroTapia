@@ -1,4 +1,4 @@
-package AnalizadorDeCódigo;
+package AnalizadorDeCódigo.Handler;
 
 public abstract class AbstractHandler implements Handler {
     private Handler nextHandler;

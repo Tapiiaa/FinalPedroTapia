@@ -1,0 +1,57 @@
+@startuml
+
+' Definición de Interfaz
+interface Handler {
+    setNext(Handler)
+    handle(String) : String
+}
+
+' Clase Abstracta que implementa la interfaz
+abstract class AbstractHandler {
+    {field} Handler nextHandler
+    {abstract} handle(String) : String
+    setNext(Handler)
+}
+
+' Clases de manejadores específicos
+class PalabraReservadaHandler {
+    handle(String) : String
+}
+
+class SintaxisHandler {
+    handle(String) : String
+}
+
+class ParentesisHandler {
+    handle(String) : String
+}
+
+' Clase Analizadora que utiliza los manejadores
+class Analyzer {
+    {field} Handler chain
+    buildChain()
+    analyze(String) : String
+}
+
+' Clase de la GUI
+class MainGUI {
+    {field} JFrame frame
+    {field} JTextField inputField
+    {field} JButton analyzeButton
+    {field} JTextArea resultArea
+    {field} JTextArea rulesArea
+    initializeUI()
+    main(String[])
+}
+
+' Relaciones
+AbstractHandler <|-- PalabraReservadaHandler
+AbstractHandler <|-- SintaxisHandler
+AbstractHandler <|-- ParentesisHandler
+
+Handler <|-- AbstractHandler
+Analyzer -right-> Handler : uses
+
+MainGUI ..> Analyzer : uses
+
+@enduml

@@ -1,5 +1,5 @@
 package AnalizadorDeCódigo.Analizadores;
-import AnalizadorDeCódigo.AbstractHandler;
+import AnalizadorDeCódigo.Handler.AbstractHandler;
 public class ParentesisHandler extends AbstractHandler {
     @Override
     public String handle(String request) {

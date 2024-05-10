@@ -1,5 +1,5 @@
 package AnalizadorDeCódigo.Analizadores;
-import AnalizadorDeCódigo.AbstractHandler;
+import AnalizadorDeCódigo.Handler.AbstractHandler;
 
 
 public class SintaxisHandler extends AbstractHandler {
