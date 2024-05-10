@@ -1,0 +1,74 @@
+@startuml
+
+interface Handler {
+    +handle(code: String): boolean
+}
+
+class CountUpHandler {
+    +handle(code: String): boolean
+}
+
+class CountDownHandler {
+    +handle(code: String): boolean
+}
+
+class ForLoopHandler {
+    +handle(code: String): boolean
+}
+
+class InfiniteLoopHandler {
+    +handle(code: String): boolean
+}
+
+class HaltChecker {
+    -handlers: List<Handler>
+    +addHandler(handler: Handler): void
+    +check(code: String): boolean
+}
+
+class ReverserLogic {
+    +analyze(code: String): String
+}
+
+class ReverserModel {
+    +data: String
+}
+
+class ReverserView {
+    +displayResult(result: String): void
+}
+
+class ReverserController {
+    -model: ReverserModel
+    -view: ReverserView
+    -logic: ReverserLogic
+    +control(): void
+}
+
+class CountUp {
+}
+
+class CountDown {
+}
+
+class MenuProgramas {
+    +start(): void
+}
+
+Handler <|.. CountUpHandler
+Handler <|.. CountDownHandler
+Handler <|.. ForLoopHandler
+Handler <|.. InfiniteLoopHandler
+
+HaltChecker "1" *- "many" Handler : uses >
+
+ReverserController -up-> ReverserModel : data >
+ReverserController -right-> ReverserView : updates >
+ReverserController -down-> ReverserLogic : uses >
+
+ReverserView <-up- ReverserController : interacts >
+
+MenuProgramas -right-> CountUp : starts >
+MenuProgramas -right-> CountDown : starts >
+
+@enduml
