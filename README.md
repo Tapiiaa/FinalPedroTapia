@@ -6,7 +6,7 @@ Link a mi repositorio: https://github.com/Tapiiaa/FinalPedroTapia.git
 PASOS PARA ABRIR EL PROYECTO EN EL ZIP: src --> ElProblemaDeParada --> haltchecker --> Main(contiene la interfaz gráfica del proyecto). Programas(Codigo de CountUp y CountDown, además de un main particular para comprobar funcionamiento). Carpetas haltchecker, Reverser.
 Carpeta UML: Contiene foto del UML, así como el código PLANTUML
 
-PARA EL ANALIZADOR DE CÓDIGO: src --> 
+PARA EL ANALIZADOR DE CÓDIGO: src --> AnalizadorDeCódigo --> Main (Ejecuta el analizador de código para bucles while y for)
 
 
 El problema de parada- Alan Turing.
