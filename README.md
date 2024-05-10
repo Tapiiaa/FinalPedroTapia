@@ -3,6 +3,10 @@ Realizado por: Pedro Alonso Tapia Lobo
 
 Link a mi repositorio: https://github.com/Tapiiaa/FinalPedroTapia.git
 
+PASOS PARA ABRIR EL PROYECTO EN EL ZIP: src --> ElProblemaDeParada --> haltchecker --> Main(contiene la interfaz gráfica del proyecto). Programas(Codigo de CountUp y CountDown, además de un main particular para comprobar funcionamiento). Carpetas haltchecker, Reverser.
+Carpeta UML: Contiene foto del UML, así como el código PLANTUML
+
+
 El problema de parada- Alan Turing.
 # Proyecto de Simulación del Problema de Parada de Alan Turing
 
