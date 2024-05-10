@@ -6,8 +6,6 @@ package ElProblemaDeParada.haltchecker.haltchecker;
 
  */
 
-
-
 public class CountDownHandler implements Handler {
     private Handler nextHandler;
 
